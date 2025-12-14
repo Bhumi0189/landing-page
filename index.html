@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An immersive 3D experience showcasing modern web technologies">
+    <title>3D Immersive Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>Loading Experience...</p>
+        </div>
+    </div>
+
+    <canvas id="canvas3d"></canvas>
+
+    <div class="content-overlay">
+        <header class="hero">
+            <h1 class="glitch" data-text="3D IMMERSIVE EXPERIENCE">3D IMMERSIVE EXPERIENCE</h1>
+            <p class="tagline">Step into the future of web design</p>
+            <button class="cta-button" id="exploreBtn">Explore Now</button>
+        </header>
+
+        <section class="features" id="features">
+            <div class="feature-card" data-tilt>
+                <div class="feature-icon">🌌</div>
+                <h3>Interactive 3D</h3>
+                <p>Experience stunning 3D graphics that respond to your movements</p>
+            </div>
+            <div class="feature-card" data-tilt>
+                <div class="feature-icon">✨</div>
+                <h3>Particle Effects</h3>
+                <p>Dynamic particle systems that create mesmerizing visual effects</p>
+            </div>
+            <div class="feature-card" data-tilt>
+                <div class="feature-icon">🎨</div>
+                <h3>Modern Design</h3>
+                <p>Sleek, contemporary aesthetics with smooth animations</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 3D Immersive Experience. Powered by Three.js</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
