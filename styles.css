@@ -302,6 +302,13 @@ body {
 }
 
 /* Scrollbar Styling */
+/* Modern browsers */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--dark-bg);
+}
+
+/* WebKit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
     width: 10px;
 }

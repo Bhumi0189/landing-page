@@ -1,5 +1,5 @@
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', init);
+// Initialize on script load (DOM is already ready as script is at end of body)
+init();
 
 let scene, camera, renderer, particles, sphere, torus;
 let mouseX = 0, mouseY = 0;
@@ -214,7 +214,7 @@ function setupSmoothScroll() {
 
 // Add scroll-based parallax effect
 window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
+    const scrolled = window.scrollY;
     if (camera) {
         camera.position.z = 5 + scrolled * 0.005;
     }
